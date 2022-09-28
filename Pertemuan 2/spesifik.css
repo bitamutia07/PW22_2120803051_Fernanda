@@ -1,0 +1,22 @@
+#p1 {
+  color: red;
+}
+/* #p1 lebih berat dari p */
+p {
+  color: red;
+}
+
+p {
+  color: greenyellow;
+}
+
+/* urutan spesificity
+inline > id > class > element */
+
+ul#sarapan li {
+  color: green;
+}
+
+ul#sarapan li.favorite {
+  color: red;
+}
