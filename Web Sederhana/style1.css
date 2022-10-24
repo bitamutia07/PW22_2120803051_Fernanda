@@ -50,8 +50,7 @@ table {
 
 body {
   font: 16px/28px , Monospace;
-  background-color: #eaeaea;
-  background-image: url(img/bg\ body.png);
+  background-image: url(img/bg2.png);
   color: rgb(110, 85, 255);
 }
 .container {
