@@ -1,0 +1,130 @@
+.container {
+  width: 600px;
+  border: 1px solid black;
+  margin: auto;
+  padding: 10px;
+}
+
+.satu, .dua, .tiga {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.satu {
+  background-color: salmon;
+}
+
+.dua {
+  background-color: lightgreen;
+  float: left;
+  margin-left: 10px;
+
+  /* kotak biru akan naik keats karena dia menganggap bahwa kota hijau tidak ada */
+}
+
+.tiga {
+  background-color: lightblue;
+  
+}
+
+.img {
+  text-align: justify;
+  border: 5px double gray;
+  margin: 50px 0px;
+}
+
+.img img {
+  /* agar teks mengelilingi gambar */
+  margin-top: 10px;
+  float: left;
+  margin: 5px;
+}
+
+
+.kotak {
+  width: 80px;
+  height: 80px;
+  background-color: salmon;
+  color: white;
+  text-align: center;
+  line-height: 80px;
+  font-size: 20px;
+  margin: 10px;
+  border: 3px solid blue;
+
+  /* biar kotaknya berjajar kesebelah kanan */
+  float: left;
+
+  /* 
+  si kotak kotak ini gak akan masuk ke border 
+  karena kotak itu di float yang artinya dianggap gak ada 
+  
+  jadi si .kotak keluar dari flow nya sehingga dianggap gak ada oleh .container
+  
+  misal kotaknya mau urutannya mulai dari kanan
+  float: right;
+  */
+
+}
+
+.kiri {
+    width: 100px;
+    height: 500px;
+    background-color: antiquewhite;
+    float: left;
+}
+
+.tengah {
+  width: 400px;
+  height: 500px;
+  background-color: azure;
+  float: left;
+}
+
+.kanan {
+  width: 100px;
+  height: 500px;
+  background-color:bisque;
+  float: right;
+}
+
+/* 
+clear ditarok di akhir 
+tujuan clear untuk menghentikan float
+*/
+
+.clear {
+  clear: left;
+}
+
+.clear2 {
+  clear: both;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }

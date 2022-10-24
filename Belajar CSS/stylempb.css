@@ -1,0 +1,109 @@
+.satu {
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  margin-left: 100px;
+  margin-top: 30px;
+  margin-bottom: -150px;
+  margin-right: 30px;
+}
+
+/*
+  overlapping margin 
+  (menggabungkan 2 buah margin)
+  biasanya atas dan bawah
+  kanan dan kiri
+
+  untuk margin vertikal 
+  dia gak ngambil kedua-duanya
+  dia ngambil angka yang lebih besar
+
+  untuk margin horizontal 
+  akan menjumlahkan margin kiri dan kanan
+*/
+
+.dua {
+  width: 100px;
+  height: 100px;
+  background-color: lightcyan;
+  margin: 100px 50px;
+
+  /* 
+  yang 100px itu gabungan untuk atas dan bawah
+  yang 50px itu gabungan kiri dan kanan
+  
+  bisa juga gunain 4 nilai
+  margin : 30px 20px 40px 60px;
+  */
+
+}
+
+/* 
+negatif margin akan membuat kotak berlawanan arah
+jika ada elemen dibwahnya maka akan ikut naik keatas 
+
+lalu utntuk negatif margin
+teori vertikal dan horizontal gak berlaku
+*/
+
+.tiga {
+  width: 50px;
+  height: 50px;
+  background-color: violet;
+  margin-left: auto;
+  margin-right: auto;
+  /* auto ngebuat itu jadi ditengah  */
+}
+
+.padding p {
+  width: 300px;
+  height: 300px;
+  background-color: coral;
+  margin: 50px auto;
+  
+  text-align: justify;
+  font-size: 18px;
+
+  padding: 10px 20px 30px 40px;
+  /* 
+  10px -> atas
+  20px -> kanan
+  30px -> bawah
+  40px -> kiri 
+  */
+
+  /* 
+  - padding gak bisa dikasih nilai negatif
+  - padding gak bisa dikasih nilai auto
+  - padding mempengaruhi ukuran box yang dibuat
+    jadi kalo ditambahi padding ukuran kotaknya akan berubah
+   */
+}
+
+.border {
+  border: 5px solid black;
+  /* 
+  5px -> lebar (width)
+  solid -> style
+  black -> warna border 
+  */
+
+  /* 
+  style border:
+  1. solid (garis biasa)
+  2. dotted (bordernya titik-titik)
+  3. dashed (garis putus-putus)
+  4. double (garisnya dua)
+  */
+
+  /* border juga menambah ukuran kotak */
+  width: 600px;
+  box-sizing: boder-box;
+
+  /* 
+  box-sizing: border-box; 
+  akan ngebuat kotaknya berukuran tetap sama, 
+  jadi bordernya gak ngerubah ukuran kotak,
+  bordernya menyesuaikan ukuran kotak. 
+  */
+}

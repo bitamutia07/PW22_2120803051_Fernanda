@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Dimesi dan Overflow</title>
+  <style>
+    /* satuan untuk width dan height 
+      1. px (satuan absolut = nilainya pasti)
+      2. % (satuan relatif terhadap element pembungkusnya)
+      3. in, cm, mm, pt(point), pc(pica untuk di printing) 
+        (satuan yang diambil dari dunia nyata)
+    */
+
+    /* jika membuat elemen child yang lebih besar dari parentnya,
+    maka dia akan keluar dari parentnya
+    
+    Solusinya dengan gunain overflow
+    
+    value overflow:
+    1. visible (value default, kalo ada child yang keluar dari parentnya maka akan diperlihatkan)
+    2. auto (kalo kontennya kebanyakan maka akan menambahkan scroll, tapi kalo cukup scrollnya gak keluar)
+    3. hidden (kalo kontenya keluar dari parent, maka tulisan yang gak muat, akan disembunyikan)
+    4. scroll (kalo kontennya kebanyakan maka akan menambahkan scroll, tapi kalo cukup scrollnya akan tetap ada)
+    */
+
+    .satu {
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+    }
+
+    .dua {
+      width: 120%;
+      background-color: aqua;
+    }
+
+    .overflow {
+      width: 200px;
+      height: 200px;
+      background-color: salmon;
+      overflow: auto;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="satu">
+    <div class="dua">Hello World</div>
+  </div>
+
+  <div class="overflow">
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae vel, corrupti, accusamus deleniti eveniet facere excepturi maxime mollitia doloremque amet quibusdam aperiam voluptas dicta quidem, possimus voluptatibus ut quia beatae!
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae vel, corrupti, accusamus deleniti eveniet facere excepturi maxime mollitia doloremque amet quibusdam aperiam voluptas dicta quidem, possimus voluptatibus ut quia beatae!
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae vel, corrupti, accusamus deleniti eveniet facere excepturi maxime mollitia doloremque amet quibusdam aperiam voluptas dicta quidem, possimus voluptatibus ut quia beatae!
+    </p>
+  </div>
+</body>
+
+</html>
