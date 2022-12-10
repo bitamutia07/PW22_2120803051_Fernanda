@@ -1,0 +1,327 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Style untuk body*/
+body {
+  font: 18px/28px , Monospace;
+  background-color: #fff;
+  color: rgb(110, 85, 255);
+}
+
+
+/*sidebar*/
+.sidebar {
+  width: 200px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  border: 1px solid #333;
+  border-radius: 50px 0px 0px 0px;
+  background-color: #fff;
+}
+
+.sidebar h3 {
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+  background-color: rgb(82, 137, 255);
+  padding: 5px 5px;
+}
+
+.sidebar img {
+  width: 180px;
+  height: 180px;
+  margin-left: 9px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  position: center;
+}
+
+.sidebar ul {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li{
+  font: 14px/18px arial;
+  padding: 5px 5px;
+  border-bottom: 2px dotted rgb(101, 110, 236);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+/* untuk content */
+.main {
+  width: 1080px;
+  margin-left: 220px;
+}
+
+.header {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  
+}
+
+.header .judul  {
+  width: 1036px;
+  height: 250px;
+  border: 1px solid black;
+  margin-bottom: 5px;
+  border-radius: 0px 0px 30px 0px;
+  text-align: right;
+  padding-right: 30px;
+  position: initial;
+
+  /* gambar */
+  background-image: url(img/labdepan.jpeg);
+  background-size: cover;
+  background-position: 0 -280px;
+}
+
+.header .judul h1 {
+  margin-top: 10px;
+  font-size: 50px;
+  font-weight: bold;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header .judul h2 {
+  font-size: 23px;
+  font-weight: lighter;
+  margin-top: 10px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header ul {
+  width: 1068px;
+  margin-top: 10px;
+  background-color: rgb(82, 137, 255);
+}
+
+.header ul li {
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px 10px ;
+
+}
+
+.header a {
+  text-decoration: none;
+  color : white;
+  padding: 10px 10px 10px 10px;
+}
+
+.header ul .disini {
+  background-color: rgb(93, 196, 236);
+}
+
+
+/* ISI KONTENT */
+.Home {
+  width: 1078;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+
+.awal {
+  color: black;
+  width: 730px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.awal h2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 30px 0px 10px 30px;
+}
+
+.awal p {
+  text-align: justify;
+  margin-left: 30px;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+
+/* ARTIKEL */
+
+.bagAtas h1 {
+  margin: 30px 20px 10px 30px;
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  color: rgb(72, 91, 255);
+}
+
+.tengah ul {
+  margin: 20px 0px 30px 30px;
+}
+
+.tengah ul li {
+  display: inline-block;
+}
+
+.tengah ul li img{
+  width: 300px;
+  height: 210px;
+  margin: 10px;
+}
+
+.bioar {
+  width: 320px;
+  height: 340px;
+  border: 1px solid black;
+  margin-right: 30px;
+}
+
+.bioar h4 {
+  font-size: 24px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  margin: 5px 0px 10px 10px;
+  color: black;
+}
+
+.bioar p {
+  font-size: 14px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  text-align: justify;
+  margin: 5px 10px 10px 10px;
+  color: black;
+}
+
+.komar {
+  width: 320px;
+  border: 1px solid black;
+  margin-right: 30px;
+}
+
+.komar h4 {
+  font-size: 24px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  margin: 5px 0px 10px 10px;
+  color: black;
+}
+
+.komar p {
+  font-size: 14px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  text-align: justify;
+  margin: 5px 10px 10px 10px;
+  color: black;
+}
+
+
+/* tambahan konten */
+.maps {
+  float: right;
+  width: 270px;
+  text-align: justify;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.alamat {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 10px;
+  color: black;
+}
+
+.alamat h2 {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.alamat p {
+  font-size: 14px;
+}
+
+
+/* footer */
+.footer {
+  background-color: rgb(82, 137, 255);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px 0px 20px 0px;
+  margin-left: 6px;
+}
+
+.footer .copy {
+  color: #eaeaea;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer .uin {
+  color: #eaeaea;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
+/* clearfix */
+.cf:before,
+.cf:after {
+  content: " "; 
+  display: table; 
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
